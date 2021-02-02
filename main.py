@@ -3,7 +3,7 @@ from time import sleep
 from pywol import wake
 from os import environ
 
-TIMEOUT = environ['TIMEOUT']
+TIMEOUT = int(environ['TIMEOUT'])
 HOST = environ['HOST']
 MAC  = environ['MAC']
 BROADCAST = environ['BROADCAST']
